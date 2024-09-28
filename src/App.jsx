@@ -17,3 +17,19 @@ function App() {
 }
 
 export default App;
+
+// //  const [data, setData] = useState([]);
+//   const fetchData = async () => {
+//     try {
+//       const response = await fetch();
+//       const jsonData = await response.json();
+//       console.log(jsonData);
+//       setData(jsonData);
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   };
+
+//   useEffect(() => {
+//     fetchData();
+//   }, []);

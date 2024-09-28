@@ -137,3 +137,7 @@ const Navbartop = () => {
 };
 
 export default Navbartop;
+
+// import cardgames from "../../assets/bannerimg/cardgames.jpg"
+// import dailyneeds from "../../assets/bannerimg/dailyneeds.jpg"
+// import redmi from "../../assets/bannerimg/redmi.jpg"
