@@ -136,103 +136,193 @@ const Banner = () => {
             <img src={mosquitonet} alt="Mosquito Net" />
           </div>
         </Slider>
+      </div>
 
-        <div className=" grid grid-cols-4 gap-4 mx-3">
-          {/* Each product category */}
-          <div className="bg-white border p-4">
-            <h2 className="font-bold text-lg mb-2">
-              Up to 80% off | Electronics & accessories
-            </h2>
-            <img
-              src={RECPC}
-              alt="Electronic offer"
-              className=" h-60 absolute"
-            />
-            <p className="text-blue-600 mt-2 text-sm">See all offers</p>
-          </div>
-          <div className="bg-white border p-4">
-            <h2 className="font-bold text-lg mb-2">
-              Starting ₹6,999 | Upgrade to 4K TVs
-            </h2>
-            <img src={SamsungMi} alt="TV offer" className="h-60 " />
-            <p className="text-blue-600 mt-2 text-sm">See all offers</p>
-          </div>
-          <div className="bg-white border p-4">
-            <h2 className="font-bold text-lg mb-2">
-              Up to 75% off | Never before offers on appliances
-            </h2>
-            <div className="grid grid-cols-2 gap-4 text-xs">
-              <div>
-                <img
-                  src={frigde}
-                  alt="Appliance offer"
-                  className=" w-full h-28"
-                />
-                <p>Front loads | Up to 60% off</p>
-              </div>
-              <div>
-                <img
-                  src={refrigde}
-                  alt="Appliance offer"
-                  className="w-full h-28"
-                />
-                <p>High capacity fridges | Up to 60% off</p>
-              </div>
-              <div>
-                <img src={ac} alt="Appliance offer" className=" w-full h-28" />
-                <p>Energy efficient ACs | Up to 60% off</p>
-              </div>
-              <div>
-                <img
-                  src={chimney}
-                  alt="Appliance offer"
-                  className="  w-full h-28"
-                />
-                <p>AutoClean Chimneys | Up to 75% off</p>
-              </div>
+      <div className=" grid grid-cols-4 gap-4 mx-3 absolute -mt-[350px]">
+        {/* Each product category */}
+        <div className="bg-white border p-4">
+          <h2 className="font-bold text-lg mb-2">
+            Up to 80% off | Electronics & accessories
+          </h2>
+          <img src={RECPC} alt="Electronic offer" className=" h-[300px] " />
+          <p className="text-blue-600 mt-2 text-sm">See all offers</p>
+        </div>
+        <div className="bg-white border p-4">
+          <h2 className="font-bold text-lg mb-2">
+            Starting ₹6,999 | Upgrade to 4K TVs
+          </h2>
+          <img src={SamsungMi} alt="TV offer" className="h-[300px] " />
+          <p className="text-blue-600 mt-2 text-sm">See all offers</p>
+        </div>
+        <div className="bg-white border p-4">
+          <h2 className="font-bold text-lg mb-2">
+            Up to 75% off | Never before offers on appliances
+          </h2>
+          <div className="grid grid-cols-2 gap-4 text-xs">
+            <div>
+              <img
+                src={frigde}
+                alt="Appliance offer"
+                className=" w-full h-28"
+              />
+              <p>Front loads | Up to 60% off</p>
             </div>
-            <p className="text-blue-600 mt-2 text-sm">See all offers</p>
-          </div>
-          <div className="bg-white border p-4">
-            <h2 className="font-bold text-lg mb-2">
-              Minimum 50% off | Home, kitchen & more
-            </h2>
-            <div className="grid grid-cols-2 gap-4 text-xs">
-              <div>
-                <img
-                  src={kitchen}
-                  alt="Home offer"
-                  className="w-full h-28 object-cover"
-                />
-                <p>Kitchen appliance</p>
-              </div>
-              <div>
-                <img
-                  src={furniture}
-                  alt="Home offer"
-                  className="w-full h-28 object-cover"
-                />
-                <p>Furniture</p>
-              </div>
-              <div>
-                <img
-                  src={homedecor}
-                  alt="Home offer"
-                  className="w-full h-28 object-cover"
-                />
-                <p>Home decor</p>
-              </div>
-              <div>
-                <img
-                  src={homeimprovement}
-                  alt="Home offer"
-                  className="w-full h-28 object-cover"
-                />
-                <p>Home improvemnet</p>
-              </div>
+            <div>
+              <img
+                src={refrigde}
+                alt="Appliance offer"
+                className="w-full h-28"
+              />
+              <p>High capacity fridges | Up to 60% off</p>
             </div>
-            <p className="text-blue-600 mt-2 text-sm">See all deals</p>
+            <div>
+              <img src={ac} alt="Appliance offer" className=" w-full h-28" />
+              <p>Energy efficient ACs | Up to 60% off</p>
+            </div>
+            <div>
+              <img
+                src={chimney}
+                alt="Appliance offer"
+                className="  w-full h-28"
+              />
+              <p>AutoClean Chimneys | Up to 75% off</p>
+            </div>
           </div>
+          <p className="text-blue-600 mt-2 text-sm">See all offers</p>
+        </div>
+        <div className="bg-white border p-4">
+          <h2 className="font-bold text-lg mb-2">
+            Minimum 50% off | Home, kitchen & more
+          </h2>
+          <div className="grid grid-cols-2 gap-4 text-xs">
+            <div>
+              <img
+                src={kitchen}
+                alt="Home offer"
+                className="w-full h-28 object-cover"
+              />
+              <p>Kitchen appliance</p>
+            </div>
+            <div>
+              <img
+                src={furniture}
+                alt="Home offer"
+                className="w-full h-28 object-cover"
+              />
+              <p>Furniture</p>
+            </div>
+            <div>
+              <img
+                src={homedecor}
+                alt="Home offer"
+                className="w-full h-28 object-cover"
+              />
+              <p>Home decor</p>
+            </div>
+            <div>
+              <img
+                src={homeimprovement}
+                alt="Home offer"
+                className="w-full h-28 object-cover"
+              />
+              <p>Home improvemnet</p>
+            </div>
+          </div>
+          <p className="text-blue-600 mt-2 text-sm">See all deals</p>
+        </div>
+      </div>
+
+      <div className=" grid grid-cols-4 gap-4 mx-3 mt-28">
+        {/* Each product category */}
+        <div className="bg-white border p-4">
+          <h2 className="font-bold text-lg mb-2">
+            Up to 80% off | Electronics & accessories
+          </h2>
+          <img src={RECPC} alt="Electronic offer" className=" h-60 absolute" />
+          <p className="text-blue-600 mt-2 text-sm">See all offers</p>
+        </div>
+        <div className="bg-white border p-4">
+          <h2 className="font-bold text-lg mb-2">
+            Starting ₹6,999 | Upgrade to 4K TVs
+          </h2>
+          <img src={SamsungMi} alt="TV offer" className="h-60 " />
+          <p className="text-blue-600 mt-2 text-sm">See all offers</p>
+        </div>
+        <div className="bg-white border p-4">
+          <h2 className="font-bold text-lg mb-2">
+            Up to 75% off | Never before offers on appliances
+          </h2>
+          <div className="grid grid-cols-2 gap-4 text-xs">
+            <div>
+              <img
+                src={frigde}
+                alt="Appliance offer"
+                className=" w-full h-28"
+              />
+              <p>Front loads | Up to 60% off</p>
+            </div>
+            <div>
+              <img
+                src={refrigde}
+                alt="Appliance offer"
+                className="w-full h-28"
+              />
+              <p>High capacity fridges | Up to 60% off</p>
+            </div>
+            <div>
+              <img src={ac} alt="Appliance offer" className=" w-full h-28" />
+              <p>Energy efficient ACs | Up to 60% off</p>
+            </div>
+            <div>
+              <img
+                src={chimney}
+                alt="Appliance offer"
+                className="  w-full h-28"
+              />
+              <p>AutoClean Chimneys | Up to 75% off</p>
+            </div>
+          </div>
+          <p className="text-blue-600 mt-2 text-sm">See all offers</p>
+        </div>
+        <div className="bg-white border p-4">
+          <h2 className="font-bold text-lg mb-2">
+            Minimum 50% off | Home, kitchen & more
+          </h2>
+          <div className="grid grid-cols-2 gap-4 text-xs">
+            <div>
+              <img
+                src={kitchen}
+                alt="Home offer"
+                className="w-full h-28 object-cover"
+              />
+              <p>Kitchen appliance</p>
+            </div>
+            <div>
+              <img
+                src={furniture}
+                alt="Home offer"
+                className="w-full h-28 object-cover"
+              />
+              <p>Furniture</p>
+            </div>
+            <div>
+              <img
+                src={homedecor}
+                alt="Home offer"
+                className="w-full h-28 object-cover"
+              />
+              <p>Home decor</p>
+            </div>
+            <div>
+              <img
+                src={homeimprovement}
+                alt="Home offer"
+                className="w-full h-28 object-cover"
+              />
+              <p>Home improvemnet</p>
+            </div>
+          </div>
+          <p className="text-blue-600 mt-2 text-sm">See all deals</p>
         </div>
       </div>
     </>
