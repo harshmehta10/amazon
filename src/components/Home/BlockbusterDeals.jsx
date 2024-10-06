@@ -2,104 +2,161 @@ import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import threebottle from "../../assets/utensils/threebottle.jpg";
-import PieceNonStickCookwareSet from "../../assets/utensils/PieceNonStickCookwareSet.jpg";
-import bottle from "../../assets/utensils/bottle.jpg";
-import ChopperGreen from "../../assets/utensils/ChopperGreen.jpg";
-import CurvedStainlessSteelWaterBottle from "../../assets/utensils/CurvedStainlessSteelWaterBottle.jpg";
-import dishdrainer from "../../assets/utensils/dishdrainer.jpg";
-import KitchenPress from "../../assets/utensils/KitchenPress.jpg";
-import NONSTICKKADHAIWITHGLASSLID from "../../assets/utensils/NONSTICKKADHAIWITHGLASSLID.jpg";
-import pan from "../../assets/utensils/pan.jpg";
-import PlasticDishDrainerblue from "../../assets/utensils/PlasticDishDrainerblue.jpg";
-import PlasticStorageContainers from "../../assets/utensils/PlasticStorageContainers.jpg";
-import PlasticStorageJarandContainerSet from "../../assets/utensils/PlasticStorageJarandContainerSet.jpg";
-import SaucepanwithGlassLid from "../../assets/utensils/SaucepanwithGlassLid.jpg";
-import steelbigbowl from "../../assets/utensils/steelbigbowl.jpg";
-import steeljars from "../../assets/utensils/steeljars.jpg";
-import SteelTopeSet from "../../assets/utensils/SteelTopeSet.jpg";
+import AcerAspireLite from "../../assets/electronics/Acer Aspire Lite.jpg";
+import Apple20WUSBCPowerAdapter from "../../assets/electronics/Apple 20W USB-C Power Adapter.jpg";
+import AquaguardDelightNXTAquasaver from "../../assets/electronics/Aquaguard Delight NXT Aquasaver.jpg";
+import ASUSTUFGamingA15 from "../../assets/electronics/ASUS TUF Gaming A15.jpg";
+import ASUSVivobook15 from "../../assets/electronics/ASUS Vivobook 15.jpg";
+import CromptonArnoNeo from "../../assets/electronics/Crompton Arno Neo.jpg";
+import DellSmartchoice from "../../assets/electronics/Dell Smartchoice.jpg";
+import DellG15 from "../../assets/electronics/Dell G15.jpg";
+import HP15sCorei5 from "../../assets/electronics/HP 15s Core i5.jpg";
+import HPVictusGamingLaptop from "../../assets/electronics/HP Victus Gaming Laptop.jpg";
+import LenovoIdeaPadSlim3 from "../../assets/electronics/Lenovo IdeaPad Slim 3.jpg";
+import LenovoSmartchoiceLOQ from "../../assets/electronics/Lenovo Smartchoice LOQ.jpg";
+import MacBookAir from "../../assets/electronics/MacBook Air.jpg";
+import OneplusBulletsZ2 from "../../assets/electronics/Oneplus Bullets Z2 .jpg";
+import OnePlusNordBuds2 from "../../assets/electronics/OnePlus Nord Buds 2.jpg";
+import POCOX6 from "../../assets/electronics/POCO X6.jpg";
+import SamsungGalaxyBuds2Pro from "../../assets/electronics/Samsung Galaxy Buds2 Pro.jpg";
 
 const BlockbusterDeals = () => {
   const deals = [
     {
       id: 1,
-      Name: "threebottle",
-      src: threebottle,
+      src: AcerAspireLite,
+      festival: "Great Indian Festival",
+      discount: "41% off",
+      Price: "₹29,990",
+      MRP: "₹50,990",
     },
     {
       id: 2,
-      Name: "PieceNonStickCookwareSet",
-      src: PieceNonStickCookwareSet,
+      src: Apple20WUSBCPowerAdapter,
+      festival: "Great Indian Festival",
+      discount: "41% off",
+      Price: "₹29,990",
+      MRP: "₹50,990",
     },
     {
       id: 3,
-      Name: "bottle",
-      src: bottle,
+      src: AquaguardDelightNXTAquasaver,
+      festival: "Great Indian Festival",
+      discount: "41% off",
+      Price: "₹29,990",
+      MRP: "₹50,990",
     },
     {
       id: 4,
-      Name: "ChopperGreen",
-      src: ChopperGreen,
+      src: ASUSTUFGamingA15,
+      festival: "Great Indian Festival",
+      discount: "27% off",
+      Price: "₹40,990",
+      MRP: "₹60,990",
     },
     {
       id: 5,
-      Name: "CurvedStainlessSteelWaterBottle",
-      src: CurvedStainlessSteelWaterBottle,
+      src: ASUSVivobook15,
+      festival: "Great Indian Festival",
+      discount: "38% off",
+      Price: "₹47,990",
+      MRP: "₹76,990",
     },
     {
       id: 6,
-      Name: "dishdrainer",
-      src: dishdrainer,
+      src: CromptonArnoNeo,
+      festival: "Great Indian Festival",
+      discount: "21% off",
+      Price: "₹36,990",
+      MRP: "₹59,990",
     },
     {
       id: 7,
-      Name: "KitchenPress",
-      src: KitchenPress,
+      src: DellSmartchoice,
+      festival: "Great Indian Festival",
+      discount: "41% off",
+      Price: "₹29,990",
+      MRP: "₹50,990",
     },
     {
       id: 8,
-      Name: "NONSTICKKADHAIWITHGLASSLID",
-      src: NONSTICKKADHAIWITHGLASSLID,
+      src: DellG15,
+      festival: "Great Indian Festival",
+      discount: "41% off",
+      Price: "₹29,990",
+      MRP: "₹50,990",
     },
     {
       id: 9,
-      Name: "pan",
-      src: pan,
+      src: HP15sCorei5,
+      festival: "Great Indian Festival",
+      discount: "41% off",
+      Price: "₹29,990",
+      MRP: "₹50,990",
     },
     {
       id: 10,
-      Name: "PlasticDishDrainerblue",
-      src: PlasticDishDrainerblue,
+      src: HPVictusGamingLaptop,
+      festival: "Great Indian Festival",
+      discount: "41% off",
+      Price: "₹29,990",
+      MRP: "₹50,990",
     },
     {
       id: 11,
-      Name: "PlasticStorageContainers",
-      src: PlasticStorageContainers,
+      src: LenovoIdeaPadSlim3,
+      festival: "Great Indian Festival",
+      discount: "41% off",
+      Price: "₹29,990",
+      MRP: "₹50,990",
     },
     {
       id: 12,
-      Name: "PlasticStorageJarandContainerSet",
-      src: PlasticStorageJarandContainerSet,
+      src: LenovoSmartchoiceLOQ,
+      festival: "Great Indian Festival",
+      discount: "31% off",
+      Price: "66,190",
+      MRP: "95,850",
     },
     {
       id: 13,
-      Name: "SaucepanwithGlassLid",
-      src: SaucepanwithGlassLid,
+      src: MacBookAir,
+      discount: "37 % Off",
+      festival: "Great Indian Festival",
+      Price: "58,990",
+      MRP: "92,900",
     },
     {
       id: 14,
-      Name: "steelbigbowl",
-      src: steelbigbowl,
+      src: OneplusBulletsZ2,
+      festival: "Great Indian Festival",
+      discount: "43% off",
+      Price: "1,299",
+      MRP: "2,299",
     },
     {
       id: 15,
-      Name: "steeljars",
-      src: steeljars,
+      src: OnePlusNordBuds2,
+      festival: "Great Indian Festival",
+      discount: "41% off",
+      Price: "₹29,990",
+      MRP: "₹50,990",
     },
     {
       id: 16,
-      Name: "SteelTopeSet",
-      src: SteelTopeSet,
+      src: POCOX6,
+      festival: "Great Indian Festival",
+      discount: "41% off",
+      Price: "₹29,990",
+      MRP: "₹50,990",
+    },
+    {
+      id: 17,
+      src: SamsungGalaxyBuds2Pro,
+      festival: "Great Indian Festival",
+      discount: "41% off",
+      Price: "₹29,990",
+      MRP: "₹50,990",
     },
   ];
   const [images, setImages] = useState(deals);
@@ -142,7 +199,7 @@ const BlockbusterDeals = () => {
     }
   };
   return (
-    <div className="bg-[#FFD77D] p-6">
+    <div className="bg-[#FFD77D] p-6 m-4">
       {/* Header Section */}
 
       <h1 className="text-xl font-bold text-black">Blockbuster deals</h1>
@@ -173,11 +230,29 @@ const BlockbusterDeals = () => {
         <Slider ref={sliderRef} {...settings}>
           {deals.map((deal, index) => (
             <div key={index} className="p-2">
-              <img
-                src={deal.src}
-                alt={`Deal ${index + 1}`}
-                className="h-40 w-full object-contain"
-              />
+              {/* Deal Card */}
+              <div className="bg-white rounded-lg shadow-md overflow-hidden px-3 py-2">
+                <img
+                  src={deal.src}
+                  alt={`Deal ${index + 1}`}
+                  className="h-40 w-full object-contain mb-4"
+                />
+                <div className="flex justify-between items-center mb-2">
+                  <h1 className=" text-white  bg-red-500 font-bold rounded-sm text-xs p-1">
+                    {deal.discount}
+                  </h1>
+                  <h1 className="text-red-500 px-2 py-1 rounded-md text-xs">
+                    {deal.festival}
+                  </h1>
+                </div>
+                <div className="text-lg font-semibold text-black">
+                  {deal.Price}
+                </div>
+                <div className="text-sm line-through text-gray-500 mb-2">
+                  M.R.P: {deal.MRP}
+                </div>
+                <p className="text-sm text-gray-700">{deal.description}</p>
+              </div>
             </div>
           ))}
         </Slider>

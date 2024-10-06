@@ -74,13 +74,13 @@ const Navbartop = () => {
     //     <div>Cart</div>
     //   </div>
     // </div>
-    <header className="shadow sticky z-50 top-0">
-      <nav className="bg-black p-3 flex items-center justify-between">
-        <div className="flex items-center">
+    <header className="shadow sticky z-50 top-0 w-full ">
+      <nav className="bg-black  flex items-center justify-between">
+        <div className="flex items-center hover:border">
           <img src={logo} alt="Amazon Logo" className="h-10" />
           <h3>.in</h3>
         </div>
-        <div className="flex items-center ">
+        <div className="flex items-center hover:border">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -118,15 +118,15 @@ const Navbartop = () => {
             <FaSearch />
           </button>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center hover:border">
           <img src={Flag} alt="flag of india" className="h-3 w-3" />
           <h1>EN</h1>
           <IoMdArrowDropdown />
         </div>
         <div className="flex items-center space-x-4 text-white">
-          <div className="cursor-pointer">Hello, Sign in</div>
-          <div className="cursor-pointer">Returns & Orders</div>
-          <div className="flex items-center cursor-pointer">
+          <div className="cursor-pointer hover:border">Hello, Sign in</div>
+          <div className="cursor-pointer hover:border">Returns & Orders</div>
+          <div className="flex items-center cursor-pointer hover:border">
             <FaShoppingCart />
             <span className="ml-1">Cart</span>
           </div>

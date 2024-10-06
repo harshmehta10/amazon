@@ -110,6 +110,7 @@ const Startingdeals = () => {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 3,
+    arrow: false,
 
     responsive: [
       {
@@ -117,8 +118,9 @@ const Startingdeals = () => {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 2,
-          infinite: true,
+          infinite: false,
           dots: false,
+          arrow: false,
         },
       },
       {
@@ -126,6 +128,7 @@ const Startingdeals = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          arrow: false,
         },
       },
     ],
@@ -143,7 +146,7 @@ const Startingdeals = () => {
   };
 
   return (
-    <div className="bg-yellow-400 p-6">
+    <div className="bg-white p-6 mt-4 mx-4">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-xl font-bold">
@@ -155,11 +158,11 @@ const Startingdeals = () => {
       {/* Slider Section */}
       <div className="relative">
         {/* Custom Previous Button */}
-        {/* <button
+        <button
           onClick={handlePrev}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-md p-2 rounded-full"
-        > */}
-        {/* <svg
+        >
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -170,9 +173,9 @@ const Startingdeals = () => {
             strokeLinejoin="round"
             className="feather feather-chevron-left"
           >
-            <polyline points="15 18 9 12 15 6"></polyline> */}
-        {/* </svg> */}
-        {/* </button> */}
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
 
         {/* Slider */}
         <Slider ref={sliderRef} {...settings}>
