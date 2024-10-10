@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 
 const All = () => {
-  const [cartegory, setCategory] = useState(true);
-  const [program, setProgram] = useState(true);
+  const [cartegory, setCategory] = useState(false);
+  const [program, setProgram] = useState(false);
   return (
-    <div>
-      <div className="flex flex-col space-x-4 space-y-2 w-80 border">
-        <div className="bg-[#232f3e] text-white font-bold px-4">
+    <div className="flex">
+      <div
+        className="flex flex-col space-x-4 space-y-2 w-80 border fixed top-0 left-0 bg-white text-black z-30 "
+        style={{ maxHeight: "100vh", overflowY: "auto" }}
+      >
+        <div className="bg-[#232f3e] text-white font-bold px-4 ">
           <h1>Hello,sign in </h1>
         </div>
         <div>
@@ -124,6 +127,24 @@ const All = () => {
             <li>Sign in</li>
           </ul>
         </div>
+      </div>
+      <div className="fixed top-0 left-6 ">
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   );

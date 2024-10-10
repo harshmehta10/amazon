@@ -1,17 +1,20 @@
 import React, { useState } from "react";
-import All from "../Pages/All";
+import All from "../All";
 
 const Navbarbottom = () => {
   const [showAll, setShowAll] = useState(false);
-  const handleClick = () => {
-    setShowAll(true);
-  };
+
   return (
     <div>
       <div className="bg-[#232f3e] w-full h-full ">
-        <ul className="flex items-center cursor-pointer justify-between mx-2 py-2">
-          <li className="flex hover:border" onClick={handleClick}>
-            {/* {showAll && <All />} */}
+        <ul className="flex items-center cursor-pointer justify-between  py-1">
+          <li
+            className="flex  border border-transparent hover:border-white"
+            onClick={() => {
+              setShowAll(!showAll);
+              console.log("Toggled showAll:", !showAll);
+            }}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -28,7 +31,8 @@ const Navbarbottom = () => {
             </svg>
             All
           </li>
-          <li className="flex items-center hover:border">
+          {showAll && <All />}
+          <li className="flex items-center border border-transparent hover:border-white px-1 py-1">
             Fresh
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,12 +49,22 @@ const Navbarbottom = () => {
               />
             </svg>
           </li>
-          <li className="hover:border">Amazon miniTv</li>
-          <li className="hover:border">Sell</li>
-          <li className="hover:border">Best Seller</li>
-          <li className="hover:border">Today's Deal</li>
-          <li className="hover:border">Moblies</li>
-          <li className="flex items-center hover:border">
+          <li className="border border-transparent hover:border-white px-1 py-1">
+            Amazon miniTv
+          </li>
+          <li className="border border-transparent hover:border-white px-1 py-1">
+            Sell
+          </li>
+          <li className="border border-transparent hover:border-white px-1 py-1">
+            Best Seller
+          </li>
+          <li className="border border-transparent hover:border-white px-1 py-1">
+            Today's Deal
+          </li>
+          <li className="border border-transparent hover:border-white px-1 py-1">
+            Moblies
+          </li>
+          <li className="flex items-center border border-transparent hover:border-white px-1 py-1">
             Prime{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -67,14 +81,30 @@ const Navbarbottom = () => {
               />
             </svg>
           </li>
-          <li className="hover:border">Customer Service</li>
-          <li className="hover:border">Electronics</li>
-          <li className="hover:border">Fashion</li>
-          <li className="hover:border">New Releases</li>
-          <li className="hover:border">Home & Kitchen</li>
-          <li className="hover:border">Amazon Pay</li>
-          <li className="hover:border">Computers</li>
-          <li className="hover:border">Car & Motorbike</li>
+          <li className="border border-transparent hover:border-white px-1 py-1">
+            Customer Service
+          </li>
+          <li className="border border-transparent hover:border-white px-1 py-1">
+            Electronics
+          </li>
+          <li className="border border-transparent hover:border-white px-1 py-1">
+            Fashion
+          </li>
+          <li className="border border-transparent hover:border-white px-1 py-1">
+            New Releases
+          </li>
+          <li className="border border-transparent hover:border-white  px-1 py-1">
+            Home & Kitchen
+          </li>
+          <li className="border border-transparent hover:border-white  px-1 py-1">
+            Amazon Pay
+          </li>
+          <li className="border border-transparent hover:border-white  px-1 py-1">
+            Computers
+          </li>
+          <li className="border border-transparent hover:border-white px-1 py-1">
+            Car & Motorbike
+          </li>
         </ul>
       </div>
     </div>

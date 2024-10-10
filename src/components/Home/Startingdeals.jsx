@@ -110,7 +110,7 @@ const Startingdeals = () => {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 3,
-    arrow: false,
+    arrows: false,
 
     responsive: [
       {

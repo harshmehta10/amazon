@@ -3,6 +3,8 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import All from "./components/All";
+import Fresh from "./components/Pages/Fresh";
 
 function App() {
   const [count, setCount] = useState(0);
